@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SA Mart</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #c8efd1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            width: 55%;
+        }
+
+        .content h1 {
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .content b {
+            color: #4eb060;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        .button a {
+            background-color: #3d3d3d;
+            padding: 10px 25px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .button a:hover {
+            background-color: #4eb060;
+        }
+
+        .image {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .content, .image {
+                width: 100%;
+            }
+
+            .image img {
+                max-width: 250px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Content Section -->
+        <div class="content">
+            <h1>About Us</h1>
+            <p>
+                If you are looking for fresh grocery and farm-fresh fruits & vegetables, world-class breads, top-quality pulses,
+                and food grains, dairy products, then <b>SA MART</b> has got you covered.  
+                No more traffic jams, parking hassles, or heavy bags—get everything delivered at your doorstep across India.
+            </p>
+            <p>
+                Shopping online is now easy as every product on your monthly shopping list is available online at <b>SA MART</b>.
+            </p>
+            <p>To go back to the home page, click the SA MART icon below.</p>
+            <div class="button">
+                <a href="index.html">Go to Home</a>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image">
+            <a href="index.html">
+                <img src="images/saicon.png" alt="SA Mart">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

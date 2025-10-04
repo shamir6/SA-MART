@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Frozen Foods</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="AmulVeggiestrix" data-price="299" data-image="images/amul1.jfif">
+                <img src="images/amul1.jfif" alt="Amul1">
+                <h3>Amul Veggie Strix</h3>
+                <p>₹299 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="CheeseOnionPockets" data-price="399" data-image="images/amul2.jfif">
+                <img src="images/amul2.jfif" alt="Amul2">
+                <h3>Cheese Onion Pockets</h3>
+                <p>₹399 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="AmulFrenchFries" data-price="299" data-image="images/amul3.jfif">
+                <img src="images/amul3.jfif" alt="amul3">
+                <h3>Amul French Fries</h3>
+                <p>₹299 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="AmulHashBrown" data-price="399" data-image="images/amul4.jfif">
+                <img src="images/amul4.jfif" alt="Amul4">
+                <h3>Amul Hash Brown</h3>
+                <p>₹399 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

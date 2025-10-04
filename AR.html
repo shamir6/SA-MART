@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Atta, Rice & Dals</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="Atta" data-price="59" data-image="images/atta.jfif">
+                <img src="images/atta.jfif" alt="Atta">
+                <h3>Atta</h3>
+                <p>₹59 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Rice" data-price="89" data-image="images/rice.jfif">
+                <img src="images/rice.jfif" alt="Rice">
+                <h3>Rice</h3>
+                <p>₹89 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Dal" data-price="149" data-image="images/dall.jfif">
+                <img src="images/dall.jfif" alt="Dal">
+                <h3>Dal</h3>
+                <p>₹149 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Oil" data-price="145" data-image="images/oil.jfif">
+                <img src="images/oil.jfif" alt="Oil">
+                <h3>Apple</h3>
+                <p>₹145 / ltr</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

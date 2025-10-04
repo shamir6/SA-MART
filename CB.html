@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Chips & Biscuits</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="Mariegold" data-price="19" data-image="images/mariegold.jfif">
+                <img src="images/mariegold.jfif" alt="Mariegold">
+                <h3>Marie Gold</h3>
+                <p>₹19 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="5050" data-price="18" data-image="images/5050.jfif">
+                <img src="images/5050.jfif" alt="5050">
+                <h3>5050 Classic</h3>
+                <p>₹18 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="MilkBikis" data-price="20" data-image="images/milkbikis.jfif">
+                <img src="images/milkbikis.jfif" alt="MilkBikis">
+                <h3>MilkBikis</h3>
+                <p>₹20 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="GoodDay" data-price="15" data-image="images/goodday.jfif">
+                <img src="images/goodday.jfif" alt="GoodDay">
+                <h3>GoodDay</h3>
+                <p>₹15 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

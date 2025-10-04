@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Cold Beverages</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="Cocacola" data-price="99" data-image="images/coke.jfif">
+                <img src="images/coke.jfif" alt="Cocacola">
+                <h3>Coca Cola</h3>
+                <p>₹99 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Sprite" data-price="99" data-image="images/sprite.jfif">
+                <img src="images/sprite.jfif" alt="Sprite">
+                <h3>Sprite</h3>
+                <p>₹99 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Fanta" data-price="99" data-image="images/fanta.jfif">
+                <img src="images/fanta.jfif" alt="Fanta">
+                <h3>Fanta</h3>
+                <p>₹99 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="RedBull" data-price="109" data-image="images/redbull.jfif">
+                <img src="images/redbull.jfif" alt="RedBull">
+                <h3>RedBull</h3>
+                <p>₹109 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

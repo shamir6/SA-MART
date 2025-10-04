@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Mart - Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/saicon.png" alt="SA Mart Logo">
+            SA Mart
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Welcome to SA Mart!</h1>
+            <p>Get your daily essentials delivered right to your doorstep.</p>
+        </section>
+        
+        <!-- Search Bar -->
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for products...">
+    <button type="submit" id="search-button">🔍</button>
+</div>
+
+<!-- Search Results Below Search Bar -->
+<div id="search-results"></div>
+                       
+
+        <h2 class = 'sale-heading'>
+
+            Ramadan Sale is Live in
+
+        </h2>
+
+        <div class="countdown-container">
+
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>Days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>Hours</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>Min</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+
+        <h1 class="section-title">Exclusive Deals</h1>
+        <section class="product-container">
+            <div class="product-card" data-name="Apple" data-price="200" data-image="images/apple.jfif">
+                <img src="images/apple.jfif" alt="Apple">
+                <h3>Apple</h3>
+                <p>₹200 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Atta" data-price="60" data-image="images/atta.jfif">
+                <img src="images/atta.jfif" alt="Atta">
+                <h3>Atta</h3>
+                <p>₹60 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Sprite" data-price="99" data-image="images/sprite.jfif">
+                <img src="images/sprite.jfif" alt="Sprite">
+                <h3>Sprite</h3>
+                <p>₹99 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Turmeric" data-price="39" data-image="images/turmetric.jfif">
+                <img src="images/turmetric.jfif" alt="Turmeric">
+                <h3>Turmeric</h3>
+                <p>₹39 / 100g</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>  
+        </section>
+        
+        <h1 class="section-title">Shop By Category</h1>
+        <section class="product-container">
+            <div class="product-card">
+                <img src="images/fv.jfif" alt="Fruits & Vegetables">
+                <h3>Fruit & Vegetables</h3>
+                <p>₹100 / kg*</p>
+                <button class="Explore-More"><a href="FV.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/bc.jfif" alt="Bakery & Cakes">
+                <h3>Bakery & Cakes</h3>
+                <p>₹59 / unit*</p>
+                <button class="Explore-More"><a href="BC.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/em.jfif" alt="Eggs, Meat & Fish">
+                <h3>Eggs, Meat & Fish</h3>
+                <p>₹199 / kg*</p>
+                <button class="Explore-More"><a href="EM.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/sp.jfif" alt="Masalas & Spices">
+                <h3>Masalas & Spices</h3>
+                <p>₹20 / g*</p>
+                <button class="Explore-More"><a href="MO.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/atta.jfif" alt="Product 5">
+                <h3>Atta, Rice & Dals</h3>
+                <p>₹59 / kg*</p>
+                <button class="Explore-More"><a href="AR.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/cb.jfif" alt="Product 6">
+                <h3>Chips & Biscuits</h3>
+                <p>₹10 / g*</p>
+                <button class="Explore-More"><a href="CB.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/hc.jfif" alt="Product 7">
+                <h3>Cold Beverages</h3>
+                <p>₹30 / ltr*</p>
+                <button class="Explore-More"><a href="coldb.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/ff.jfif" alt="Product 8">
+                <h3>Frozen Foods</h3>
+                <p>₹299 / kg*</p>
+                <button class="Explore-More"><a href="ff.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/ci.jfif" alt="Product 9">
+                <h3>Ice Creams</h3>
+                <p>₹49 / g*</p>
+                <button class="Explore-More"><a href="ic.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/baca.jfif" alt="Product 10">
+                <h3>Baby Care</h3>
+                <p>₹100 / p*</p>
+                <button class="Explore-More"><a href="babyc.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/hh.jfif" alt="Product 11">
+                <h3>Health & Hygiene</h3>
+                <p>₹100 / p*</p>
+                <button class="Explore-More"><a href="hh.html">Explore More</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/buca.jfif" alt="Product 12">
+                <h3>Beauty Cosmetics</h3>
+                <p>₹100 / p*</p>
+                <button class="Explore-More"><a href="beauty.html">Explore More</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SA Mart</h3>
+                <p>Your trusted online grocery store.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><img src="images/facebookicon.png" alt="Facebook"></a>
+                    <a href="https://www.x.com"><img src="images/x.png" alt="X"></a>
+                    <a href="https://www.instagram.com"><img src="images/instagramicon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 SA Mart | All Rights Reserved</p>
+    </footer>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

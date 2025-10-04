@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Baby Care</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="MamaearthBodyLotion" data-price="299" data-image="images/bc2.jfif">
+                <img src="images/bc2.jfif" alt="MamaearthBodyLotion">
+                <h3>Mamaearth Body Lotion</h3>
+                <p>₹299 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="HimalayaBodyPowder" data-price="399" data-image="images/bc3.jfif">
+                <img src="images/bc3.jfif" alt="HimalayaBodyPowder">
+                <h3>Himalaya Body Powder</h3>
+                <p>₹399 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="JohnsonBabyOil" data-price="299" data-image="images/bc4.jfif">
+                <img src="images/bc4.jfif" alt="JohnsonBabyOil">
+                <h3>Johnson Baby Oil</h3>
+                <p>₹299 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="PampersCare" data-price="399" data-image="images/bc5.jfif">
+                <img src="images/bc5.jfif" alt="PampersCare">
+                <h3>Pampers Care</h3>
+                <p>₹399 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

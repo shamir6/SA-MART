@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Cart Table */
+.cart-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4ccd6a;
+    color: white;
+}
+
+.product-img {
+    width: 70px;
+    border-radius: 8px;
+}
+
+/* Quantity Controls */
+.quantity-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.quantity-btn:hover {
+    background-color: #3ba55d;
+}
+
+/* Remove Button */
+.remove-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
+
+/* Cart Summary */
+.cart-summary {
+    text-align:center;
+}
+
+#checkout-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#checkout-btn:hover {
+    background-color: #4ccd6a;
+}
+
+@media (max-width: 768px) {
+    .cart-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

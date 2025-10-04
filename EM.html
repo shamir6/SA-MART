@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Eggs, Meat & Fish</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="Eggs" data-price="9" data-image="images/eggs.jfif">
+                <img src="images/eggs.jfif" alt="Eggs">
+                <h3>Eggs</h3>
+                <p>₹9 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Chicken" data-price="300" data-image="images/chicken.jfif">
+                <img src="images/chicken.jfif" alt="Chicken">
+                <h3>Chicken</h3>
+                <p>₹300 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Meat" data-price="1000" data-image="images/meat.jfif">
+                <img src="images/meat.jfif" alt="Meat">
+                <h3>Meat</h3>
+                <p>₹1000 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Fish" data-price="600" data-image="images/fish.jfif">
+                <img src="images/fish.jfif" alt="Fish">
+                <h3>Fish</h3>
+                <p>₹600 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

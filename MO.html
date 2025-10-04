@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Masalas & Spices</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="Garammasala" data-price="79" data-image="images/garammasala.jfif">
+                <img src="images/garammasala.jfif" alt="Garammasala">
+                <h3>Garammasala</h3>
+                <p>₹79 / 100g</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Turmeric" data-price="39" data-image="images/turmetric.jfif">
+                <img src="images/turmetric.jfif" alt="Turmeric">
+                <h3>Turmeric</h3>
+                <p>₹39 / 100g</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Cloves" data-price="159" data-image="images/clove.jfif">
+                <img src="images/clove.jfif" alt="Cloves">
+                <h3>Cloves</h3>
+                <p>₹159 / 50g</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Cumin" data-price="99" data-image="images/cumin seeds.jfif">
+                <img src="images/cumin seeds.jfif" alt="Cuminseeds">
+                <h3>Cumin Seeds</h3>
+                <p>₹99 / 200g</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

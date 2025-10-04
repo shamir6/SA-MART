@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SA Mart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Bakery & Cakes</h1>
+        </section>
+        <section class="product-container">
+            <div class="product-card" data-name="Cake" data-price="99" data-image="images/cake.jfif">
+                <img src="images/cake.jfif" alt="Cake">
+                <h3>Cake</h3>
+                <p>₹99 / p</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="DreamCake" data-price="699" data-image="images/dreamcake.jfif">
+                <img src="images/dreamcake.jfif" alt="DreamCake">
+                <h3>Dream Cake</h3>
+                <p>₹699 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="CupCake" data-price="49" data-image="images/cupcake.jfif">
+                <img src="images/cupcake.jfif" alt="CupCake">
+                <h3>Cup Cake</h3>
+                <p>₹49 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="PieCake" data-price="99" data-image="images/piecake.jfif">
+                <img src="images/piecake.jfif" alt="PieCake">
+                <h3>Pie Cake</h3>
+                <p>₹99 / kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-toast" class="hidden">Item added to cart!</div>
+        
+    <!-- Simple Footer -->
+    <footer>
+        <p>SA Mart - Your Trusted Grocery Store</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
